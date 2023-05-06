@@ -1,0 +1,5 @@
+#!/bin/sh
+echo Hippity Hoppity CommCenter is now your property
+killall CommCenter
+killall CommCenter Helper
+exit 0
