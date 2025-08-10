@@ -3,7 +3,7 @@ Architecture: iphoneos-arm
 Pre-Depends: firmware (>= 8.0)
 Name: CommCenterPatch13
 Depends: mobilesubstrate
-Version: 3.0
+Version: 4.0.0
 Description: Hippity Hoppity make CommCenter your property
 Maintainer: Amy While <support@anamy.gay>
 Author: Amy While <support@anamy.gay>

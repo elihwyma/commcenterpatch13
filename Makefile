@@ -1,8 +1,15 @@
-ARCHS = arm64 arm64e armv7 armv7s
-TARGET = iphone:clang:latest:8.0
+THEOS_DEVICE_IP = 192.168.3.22
+
+ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
+	ARCHS = arm64 arm64e
+	TARGET = iphone:clang:latest:15.0
+else
+	ARCHS = armv7 armv7s arm64 arm64e
+	TARGET = iphone:clang:13.7:8.0
+endif
+
 INSTALL_TARGET_PROCESSES = CommCenter
 LEAN_AND_MEAN = 1
-PREFIX = /Applications/Xcode-11.7.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/
 
 include $(THEOS)/makefiles/common.mk
 

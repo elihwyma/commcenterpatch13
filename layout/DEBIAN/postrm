@@ -1,5 +1,4 @@
 #!/bin/sh
 echo Rebooting CommCenter...
 killall CommCenter
-killall CommCenter Helper
 exit 0
